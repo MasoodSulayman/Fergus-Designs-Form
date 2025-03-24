@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Wallpaper Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .terms {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Custom Wallpaper Order Form</h1>
+        <form action="#" method="POST">
+            
+            <!-- Personal Details Section -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <!-- Aesthetic Preferences Section -->
+            <div class="form-group">
+                <label for="colors">Favorite Colors:</label>
+                <input type="text" id="colors" name="colors">
+            </div>
+            <div class="form-group">
+                <label for="style">Preferred Style:</label>
+                <input type="text" id="style" name="style" placeholder="e.g., minimalistic, vintage, modern">
+            </div>
+            <div class="form-group">
+                <label for="characters">Favorite Movie Characters or Themes:</label>
+                <input type="text" id="characters" name="characters">
+            </div>
+
+            <!-- Device Details Section -->
+            <div class="form-group">
+                <label for="device">Device Type:</label>
+                <select id="device" name="device">
+                    <option value="desktop">Desktop</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="brand">Brand Association (if any):</label>
+                <input type="text" id="brand" name="brand">
+            </div>
+
+            <!-- Additional Comments Section -->
+            <div class="form-group">
+                <label for="comments">Any Specific Ideas or Requests:</label>
+                <textarea id="comments" name="comments" placeholder="Feel free to share your vision!"></textarea>
+            </div>
+
+            <!-- Terms and Conditions Section -->
+            <div class="form-group terms">
+                <p>You will have up to two opportunities for revisions. After this, no further changes will be possible.</p>
+                <label for="signature">Signature/Initials:</label>
+                <input type="text" id="signature" name="signature" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Order</button>
+        </form>
+    </div>
+
+</body>
+</html>
